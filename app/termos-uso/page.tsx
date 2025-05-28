@@ -239,6 +239,7 @@ export default function TermosUso() {
       </section>
 
       {/* Footer */}
+
       <footer className="bg-slate-900 text-white py-12 px-4">
         <div className="container mx-auto max-w-7xl">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
@@ -248,7 +249,7 @@ export default function TermosUso() {
                 alt="DATTIX Logo"
                 width={200}
                 height={60}
-                className="h-48 w-auto brightness-0 invert"
+                className="h-16 w-auto brightness-0 invert"
               />
               <p className="text-slate-400 text-sm leading-relaxed">
                 Solução inteligente para conformidade

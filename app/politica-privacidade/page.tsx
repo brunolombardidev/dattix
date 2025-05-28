@@ -223,7 +223,7 @@ export default function PoliticaPrivacidade() {
                 alt="DATTIX Logo"
                 width={200}
                 height={60}
-                className="h-48 w-auto brightness-0 invert"
+                className="h-16 w-auto brightness-0 invert"
               />
               <p className="text-slate-400 text-sm leading-relaxed">
                 Solução inteligente para conformidade

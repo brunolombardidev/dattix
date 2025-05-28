@@ -114,7 +114,7 @@ export default function DattixLanding() {
               alt="DATTIX Logo"
               width={700}
               height={900}
-              className="h-[400px] w-auto brightness-0 invert"
+              className="h-[133px] w-auto brightness-0 invert"
             />
           </div>
 
@@ -375,7 +375,7 @@ export default function DattixLanding() {
       </section>
 
       {/* O que você ganha */}
-      <section className="py-24 px-4 bg-gradient-to-b from-slate-50 to-white">
+      <section className="py-24 px-4 bg-gradient-to-b from-slate-100 to-slate-50">
         <div className="container mx-auto max-w-7xl">
           <div className="text-center mb-20">
             <div className="inline-flex items-center space-x-2 bg-purple-100 text-purple-700 px-4 py-2 rounded-full text-sm font-medium mb-6">
@@ -581,7 +581,7 @@ export default function DattixLanding() {
                 alt="DATTIX Logo"
                 width={1000}
                 height={300}
-                className="h-24 w-auto brightness-0 invert"
+                className="h-8 w-auto brightness-0 invert"
               />
               <p className="text-slate-400 leading-relaxed">
                 Solução inteligente para conformidade
