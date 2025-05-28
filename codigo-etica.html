@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Código de Ética - DATTIX</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .legal-page {
+            min-height: 100vh;
+            background: white;
+        }
+        
+        .legal-header {
+            background: linear-gradient(135deg, #0f172a, #1e3a8a, #0f172a);
+            padding: 2rem 0;
+        }
+        
+        .back-button {
+            background: transparent;
+            border: 1px solid #93c5fd;
+            color: #bfdbfe;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(4px);
+        }
+        
+        .back-button:hover {
+            background: #2563eb;
+            color: white;
+        }
+        
+        .legal-hero {
+            padding: 4rem 0;
+            background: linear-gradient(180deg, #f8fafc, white);
+            text-align: center;
+        }
+        
+        .legal-content {
+            padding: 4rem 0;
+        }
+        
+        .principles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .principle-card {
+            background: white;
+            border-radius: 1rem;
+            padding: 2rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .principle-card:hover {
+            transform: translateY(-0.25rem);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        }
+        
+        .principle-header {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .principle-number {
+            width: 4rem;
+            height: 4rem;
+            border-radius: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 900;
+            color: white;
+            flex-shrink: 0;
+        }
+        
+        .principle-icon {
+            width: 3.5rem;
+            height: 3.5rem;
+            border-radius: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            flex-shrink: 0;
+        }
+        
+        .principle-icon i {
+            font-size: 1.75rem;
+        }
+        
+        .principle-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #1e293b;
+            margin-bottom: 1rem;
+            transition: color 0.3s ease;
+        }
+        
+        .principle-card:hover .principle-title {
+            color: #1d4ed8;
+        }
+        
+        .principle-description {
+            color: #64748b;
+            line-height: 1.6;
+            text-align: justify;
+        }
+        
+        .commitment-section {
+            padding: 4rem 0;
+            background: linear-gradient(135deg, #0f172a, #1e3a8a, #0f172a);
+            color: white;
+            text-align: center;
+        }
+        
+        .commitment-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 3rem;
+        }
+        
+        .commitment-item {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(4px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            text-align: center;
+        }
+        
+        .commitment-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .commitment-title {
+            font-size: 1.125rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        
+        .commitment-description {
+            font-size: 0.875rem;
+            color: #bfdbfe;
+        }
+    </style>
+</head>
+<body>
+    <div class="legal-page">
+        <!-- Header -->
+        <header class="legal-header">
+            <div class="container">
+                <div style="display: flex; justify-content: flex-end;">
+                    <a href="index.html" class="back-button">
+                        <i class="fas fa-arrow-left"></i>
+                        Voltar ao Site
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="legal-hero">
+            <div class="container" style="max-width: 1000px;">
+                <div class="section-badge">
+                    <i class="fas fa-file-alt"></i>
+                    <span>Documento Oficial</span>
+                </div>
+
+                <h1 style="font-size: 3rem; font-weight: 900; color: #0f172a; margin-bottom: 1.5rem; line-height: 1.1;">
+                    Código de Ética no Uso de Dados por 
+                    <span class="gradient-text">Inteligência Artificial</span>
+                </h1>
+
+                <div style="background: linear-gradient(135deg, #dbeafe, #bfdbfe); border: 2px solid #93c5fd; border-radius: 1rem; padding: 2rem; margin-bottom: 2rem;">
+                    <p style="font-size: 1.125rem; color: #374151; line-height: 1.6;">
+                        Este Código de Ética reflete os princípios fundamentais da DATTIX no uso de dados e inteligência
+                        artificial (IA), com o objetivo de garantir práticas responsáveis, transparentes e alinhadas à proteção de
+                        direitos fundamentais, especialmente no contexto da Lei Geral de Proteção de Dados (LGPD).
+                    </p>
+                </div>
+
+                <div style="display: flex; align-items: center; justify-content: center; gap: 0.5rem; color: #64748b;">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span style="font-weight: 500;">Última atualização: 26 de maio de 2025</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Princípios -->
+        <section class="legal-content">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Nossos Princípios Fundamentais</h2>
+                    <p class="section-description">
+                        Cada princípio representa nosso compromisso com o uso ético e responsável da inteligência artificial.
+                    </p>
+                </div>
+
+                <div class="principles-grid">
+                    <div class="principle-card">
+                        <div class="principle-header">
+                            <div class="principle-number step-blue">1</div>
+                            <div class="principle-icon step-blue">
+                                <i class="fas fa-eye"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="principle-title">Finalidade Legítima e Transparência</h3>
+                            <p class="principle-description">
+                                A DATTIX compromete-se a utilizar dados e tecnologias de IA exclusivamente para finalidades legítimas, informadas ao titular de forma clara e acessível, assegurando a transparência dos processos automatizados.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="principle-card">
+                        <div class="principle-header">
+                            <div class="principle-number step-green">2</div>
+                            <div class="principle-icon step-green">
+                                <i class="fas fa-compress-alt"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="principle-title">Minimização e Necessidade</h3>
+                            <p class="principle-description">
+                                O tratamento de dados pessoais será limitado ao mínimo necessário para a finalidade específica, evitando a coleta excessiva ou o uso de dados irrelevantes.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="principle-card">
+                        <div class="principle-header">
+                            <div class="principle-number" style="background: linear-gradient(135deg, #ef4444, #dc2626);">3</div>
+                            <div class="principle-icon" style="background: linear-gradient(135deg, #ef4444, #dc2626);">
+                                <i class="fas fa-lock"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="principle-title">Segurança e Integridade</h3>
+                            <p class="principle-description">
+                                Adotamos medidas técnicas e administrativas para proteger os dados pessoais contra acessos não autorizados, vazamentos, perdas ou alterações indevidas, preservando sua integridade, confidencialidade e disponibilidade.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="principle-card">
+                        <div class="principle-header">
+                            <div class="principle-number step-purple">4</div>
+                            <div class="principle-icon step-purple">
+                                <i class="fas fa-balance-scale"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="principle-title">Não Discriminação e Vieses Algorítmicos</h3>
+                            <p class="principle-description">
+                                A DATTIX atua na identificação, mitigação e correção de vieses algorítmicos que possam causar discriminação injusta ou tratamento desigual. Nossos sistemas são auditáveis e passam por validações periódicas.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="principle-card">
+                        <div class="principle-header">
+                            <div class="principle-number step-orange">5</div>
+                            <div class="principle-icon step-orange">
+                                <i class="fas fa-comments"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="principle-title">Explicabilidade e Responsabilidade</h3>
+                            <p class="principle-description">
+                                As decisões automatizadas geradas por IA devem ser compreensíveis aos usuários. A DATTIX oferece meios para que os titulares entendam a lógica por trás das recomendações automatizadas, com responsabilização clara por seus efeitos.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="principle-card">
+                        <div class="principle-header">
+                            <div class="principle-number benefit-cyan">6</div>
+                            <div class="principle-icon benefit-cyan">
+                                <i class="fas fa-users"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="principle-title">Consentimento e Controle pelo Titular</h3>
+                            <p class="principle-description">
+                                Nenhum dado pessoal será tratado pela IA sem base legal ou consentimento válido. O titular terá sempre acesso a mecanismos para revisar, corrigir, excluir ou revogar permissões.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="principle-card">
+                        <div class="principle-header">
+                            <div class="principle-number" style="background: linear-gradient(135deg, #ec4899, #be185d);">7</div>
+                            <div class="principle-icon" style="background: linear-gradient(135deg, #ec4899, #be185d);">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="principle-title">Desenvolvimento Ético e Sustentável</h3>
+                            <p class="principle-description">
+                                A DATTIX se compromete com a construção de sistemas de IA que promovam impacto social positivo, inclusão digital e respeito aos valores humanos, incentivando uma cultura ética no uso da tecnologia.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="principle-card">
+                        <div class="principle-header">
+                            <div class="principle-number" style="background: linear-gradient(135deg, #6366f1, #4f46e5);">8</div>
+                            <div class="principle-icon" style="background: linear-gradient(135deg, #6366f1, #4f46e5);">
+                                <i class="fas fa-search"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="principle-title">Fiscalização e Aperfeiçoamento Contínuo</h3>
+                            <p class="principle-description">
+                                Este Código será revisado regularmente para acompanhar a evolução da tecnologia, da legislação e das expectativas sociais. Qualquer conduta em desacordo com estes princípios será apurada com seriedade e transparência.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Compromisso -->
+        <section class="commitment-section">
+            <div class="container" style="max-width: 1000px;">
+                <div class="section-badge badge-white">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Nosso Compromisso</span>
+                </div>
+
+                <h2 style="font-size: 2.5rem; font-weight: 900; line-height: 1.1; margin-bottom: 1.5rem;">
+                    Construindo o futuro da IA com 
+                    <span class="gradient-text-light">responsabilidade</span>
+                </h2>
+
+                <p style="font-size: 1.25rem; color: #bfdbfe; line-height: 1.6; max-width: 768px; margin: 0 auto 2rem;">
+                    Na DATTIX, acreditamos que a tecnologia deve servir às pessoas, respeitando seus direitos e promovendo um
+                    futuro mais justo e inclusivo para todos.
+                </p>
+
+                <div class="commitment-grid">
+                    <div class="commitment-item">
+                        <div class="commitment-icon" style="color: #60a5fa;">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3 class="commitment-title">Proteção</h3>
+                        <p class="commitment-description">Seus dados estão seguros conosco</p>
+                    </div>
+                    <div class="commitment-item">
+                        <div class="commitment-icon" style="color: #34d399;">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <h3 class="commitment-title">Transparência</h3>
+                        <p class="commitment-description">Processos claros e compreensíveis</p>
+                    </div>
+                    <div class="commitment-item">
+                        <div class="commitment-icon" style="color: #f472b6;">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3 class="commitment-title">Ética</h3>
+                        <p class="commitment-description">Valores humanos em primeiro lugar</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-brand">
+                        <img src="logo-dattix-new.png" alt="DATTIX Logo" class="footer-logo">
+                        <p class="footer-description">
+                            Solução inteligente para conformidade<br>
+                            LGPD em startups e pequenos negócios.
+                        </p>
+                    </div>
+
+                    <div class="footer-links">
+                        <h3 class="footer-title">Documentos Legais</h3>
+                        <div class="footer-nav">
+                            <a href="codigo-etica.html" class="footer-link">→ Código de Ética</a>
+                            <a href="politica-privacidade.html" class="footer-link">→ Política de Privacidade</a>
+                            <a href="termos-uso.html" class="footer-link">→ Termos de Uso</a>
+                        </div>
+                    </div>
+
+                    <div class="footer-team">
+                        <h3 class="footer-title">Fundadores & Co-Fundadores</h3>
+                        <div class="team-grid">
+                            <div class="team-section">
+                                <h4 class="team-subtitle">Fundadores</h4>
+                                <div class="team-members">
+                                    <div class="team-member">
+                                        <div class="team-dot team-dot-blue"></div>
+                                        <span>Katia Daud</span>
+                                    </div>
+                                    <div class="team-member">
+                                        <div class="team-dot team-dot-blue"></div>
+                                        <span>João Oliveira</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="team-section">
+                                <h4 class="team-subtitle">Co-Fundadores</h4>
+                                <div class="team-members">
+                                    <div class="team-member">
+                                        <div class="team-dot team-dot-purple"></div>
+                                        <span>Bruno Lombardi</span>
+                                    </div>
+                                    <div class="team-member">
+                                        <div class="team-dot team-dot-purple"></div>
+                                        <span>Taciane Garcia</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <p class="footer-copyright">© 2025 DATTIX. Todos os direitos reservados.</p>
+                    <div class="footer-made">
+                        <i class="fas fa-calendar-alt" style="margin-right: 0.5rem;"></i>
+                        <span>Atualizado em 26 de maio de 2025</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

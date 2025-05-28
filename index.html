@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DATTIX - Conformidade LGPD para Startups</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <button id="closeModal" class="modal-close">
+                <i class="fas fa-times"></i>
+            </button>
+            <iframe 
+                src="https://webhook2.atrativozap.com.br/webhook/f818a8bb-c054-4fe3-a2c7-6c2e5fd33ec9/chat"
+                title="Fale com a KatIA"
+                class="modal-iframe">
+            </iframe>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="container">
+            <!-- Logo centralizado no topo -->
+            <div class="logo-container">
+                <img src="logo-dattix-new.png" alt="DATTIX Logo" class="hero-logo">
+            </div>
+
+            <!-- Duas colunas lado a lado -->
+            <div class="hero-content">
+                <div class="hero-left">
+                    <h1 class="hero-title">
+                        A liberdade de estar em 
+                        <span class="gradient-text">conformidade</span>
+                    </h1>
+
+                    <p class="hero-description">
+                        Uma solução inteligente e acessível para startups e pequenos negócios que querem se adequar à LGPD com
+                        agilidade, autonomia e zero complicação.
+                    </p>
+
+                    <div class="katia-highlight">
+                        <div class="katia-icon">
+                            <i class="fas fa-sparkles"></i>
+                        </div>
+                        <div>
+                            <p class="katia-text">
+                                <strong class="katia-name">katIA</strong>, a consultora virtual que entende as dores de quem está começando.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="hero-actions">
+                        <button id="openModal" class="btn-primary">
+                            Fale com a KatIA
+                        </button>
+                    </div>
+                </div>
+
+                <div class="hero-right">
+                    <div class="compliance-card">
+                        <div class="compliance-header">
+                            <div class="compliance-title">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>LGPD Compliance</span>
+                            </div>
+                            <div class="status-indicator"></div>
+                        </div>
+
+                        <div class="compliance-features">
+                            <div class="feature-item feature-green">
+                                ✓ Diagnóstico completo em 60 perguntas
+                            </div>
+                            <div class="feature-item feature-blue">
+                                ✓ katIA orientando 24/7
+                            </div>
+                            <div class="feature-item feature-purple">
+                                ✓ Documentos personalizados
+                            </div>
+                        </div>
+
+                        <div class="progress-section">
+                            <div class="progress-header">
+                                <span>Progresso de Conformidade</span>
+                                <span class="progress-value">85%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Como Funciona -->
+    <section class="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">
+                    <i class="fas fa-bolt"></i>
+                    <span>Processo Simplificado</span>
+                </div>
+                <h2 class="section-title">
+                    Sua jornada de conformidade<br>
+                    <span class="text-blue">começa aqui</span>
+                </h2>
+                <p class="section-description">
+                    Um processo inteligente e automatizado que transforma a complexidade da LGPD em passos simples e claros.
+                </p>
+            </div>
+
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-icons">
+                        <div class="step-number step-blue">1</div>
+                        <div class="step-icon step-blue">
+                            <i class="fas fa-crosshairs"></i>
+                        </div>
+                    </div>
+                    <h3 class="step-title">Diagnóstico automatizado</h3>
+                    <p class="step-description">60 perguntas simples e matriz de conformidade instantânea.</p>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-icons">
+                        <div class="step-number step-purple">2</div>
+                        <div class="step-icon step-purple">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                    </div>
+                    <h3 class="step-title">Orientação com katIA</h3>
+                    <p class="step-description">IA que orienta, responde e sugere os próximos passos.</p>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-icons">
+                        <div class="step-number step-green">3</div>
+                        <div class="step-icon step-green">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                    </div>
+                    <h3 class="step-title">Documentação pronta</h3>
+                    <p class="step-description">Termos e políticas adaptadas à operação.</p>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-icons">
+                        <div class="step-number step-orange">4</div>
+                        <div class="step-icon step-orange">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                    </div>
+                    <h3 class="step-title">Painel com indicadores</h3>
+                    <p class="step-description">Acompanhe sua evolução em tempo real.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Para quem é o DATTIX -->
+    <section class="target-audience">
+        <div class="container">
+            <div class="target-grid">
+                <div class="target-left">
+                    <div class="section-header">
+                        <div class="section-badge badge-green">
+                            <i class="fas fa-users"></i>
+                            <span>Público-Alvo</span>
+                        </div>
+                        <h2 class="section-title">
+                            Feito para startups e negócios em crescimento
+                        </h2>
+                    </div>
+
+                    <div class="target-list">
+                        <div class="target-item">
+                            <div class="target-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <span>Startups early-stage</span>
+                        </div>
+                        <div class="target-item">
+                            <div class="target-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <span>Negócios digitais em estruturação</span>
+                        </div>
+                        <div class="target-item">
+                            <div class="target-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <span>Pequenos empreendedores</span>
+                        </div>
+                        <div class="target-item">
+                            <div class="target-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <span>Empresas sem DPO ou consultoria jurídica</span>
+                        </div>
+                    </div>
+
+                    <div class="b2s-highlight">
+                        <div class="b2s-icon">
+                            <i class="fas fa-crosshairs"></i>
+                        </div>
+                        <div>
+                            <h3 class="b2s-title">DATTIX é B2S</h3>
+                            <p class="b2s-description">
+                                Feito para quem precisa lidar com a LGPD com autonomia e responsabilidade, sem tempo a perder.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="target-right">
+                    <div class="autonomy-card">
+                        <div class="autonomy-header">
+                            <div class="autonomy-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <div>
+                                <h3 class="autonomy-title">Autonomia Total</h3>
+                                <p class="autonomy-subtitle">Sem dependência externa</p>
+                            </div>
+                        </div>
+
+                        <p class="autonomy-description">
+                            Desenvolvido especificamente para empresas que precisam de conformidade LGPD sem a complexidade e
+                            custos de consultorias tradicionais.
+                        </p>
+
+                        <div class="stats-grid">
+                            <div class="stat-item">
+                                <div class="stat-value">90%</div>
+                                <div class="stat-label">Economia vs Consultoria</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-value">24h</div>
+                                <div class="stat-label">Para começar</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- O que você ganha -->
+    <section class="benefits">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge badge-purple">
+                    <i class="fas fa-sparkles"></i>
+                    <span>Benefícios Exclusivos</span>
+                </div>
+                <h2 class="section-title">O que você ganha com o DATTIX</h2>
+            </div>
+
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon benefit-blue">
+                        <i class="fas fa-crosshairs"></i>
+                    </div>
+                    <h3 class="benefit-title">Plataforma simples e acessível</h3>
+                    <p class="benefit-description">Interface intuitiva pensada para não-especialistas em compliance.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon benefit-purple">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3 class="benefit-title">katIA te orienta a cada etapa</h3>
+                    <p class="benefit-description">Consultora virtual com IA para esclarecer dúvidas e guiar decisões.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon benefit-green">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3 class="benefit-title">Documentos e plano de ação claros</h3>
+                    <p class="benefit-description">Políticas e termos personalizados para seu negócio.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon benefit-orange">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="benefit-title">Sem depender de consultorias caras</h3>
+                    <p class="benefit-description">Economia significativa comparado a serviços tradicionais.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon benefit-cyan">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3 class="benefit-title">Digital, direto e com linguagem do seu negócio</h3>
+                    <p class="benefit-description">Comunicação clara, sem juridiquês desnecessário.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre a plataforma -->
+    <section class="about-platform">
+        <div class="about-bg"></div>
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-left">
+                    <div class="section-badge badge-white">
+                        <i class="fas fa-lock"></i>
+                        <span>Sobre a Plataforma</span>
+                    </div>
+                    <h2 class="about-title">O que é o DATTIX?</h2>
+
+                    <p class="about-description">
+                        O DATTIX é um aplicativo inteligente para ajudar pequenas empresas a se adequarem à LGPD com agilidade,
+                        simplicidade e segurança. Ele oferece uma jornada prática de conformidade — do diagnóstico até a
+                        implementação — com o apoio da katIA, consultora virtual com IA.
+                    </p>
+
+                    <div class="about-stats">
+                        <div class="about-stat">
+                            <div class="about-stat-value">60</div>
+                            <div class="about-stat-label">Perguntas de Diagnóstico</div>
+                        </div>
+                        <div class="about-stat">
+                            <div class="about-stat-value">24/7</div>
+                            <div class="about-stat-label">Suporte katIA</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-right">
+                    <div class="feature-list">
+                        <div class="feature-item-detailed">
+                            <div class="feature-icon-detailed feature-blue">
+                                <i class="fas fa-crosshairs"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h3 class="feature-title-detailed">Diagnóstico automatizado</h3>
+                                <p class="feature-description-detailed">Avaliação completa e instantânea do seu nível de conformidade.</p>
+                            </div>
+                        </div>
+
+                        <div class="feature-item-detailed">
+                            <div class="feature-icon-detailed feature-green">
+                                <i class="fas fa-file-alt"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h3 class="feature-title-detailed">Documentação personalizada</h3>
+                                <p class="feature-description-detailed">Políticas e termos adaptados especificamente para sua operação.</p>
+                            </div>
+                        </div>
+
+                        <div class="feature-item-detailed">
+                            <div class="feature-icon-detailed feature-purple">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h3 class="feature-title-detailed">katIA com IA para orientar</h3>
+                                <p class="feature-description-detailed">Assistente virtual inteligente disponível 24/7.</p>
+                            </div>
+                        </div>
+
+                        <div class="feature-item-detailed">
+                            <div class="feature-icon-detailed feature-orange">
+                                <i class="fas fa-chart-bar"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h3 class="feature-title-detailed">Matriz de conformidade + painel de controle</h3>
+                                <p class="feature-description-detailed">Acompanhamento visual do progresso e indicadores-chave.</p>
+                            </div>
+                        </div>
+
+                        <div class="feature-item-detailed">
+                            <div class="feature-icon-detailed feature-cyan">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h3 class="feature-title-detailed">Gestão de solicitações de titulares de dados</h3>
+                                <p class="feature-description-detailed">Ferramenta completa para atender direitos dos usuários.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Final -->
+    <section class="cta-final">
+        <div class="cta-bg"></div>
+        <div class="container">
+            <div class="cta-content">
+                <div class="section-badge badge-white">
+                    <i class="fas fa-sparkles"></i>
+                    <span>Transforme seu Negócio</span>
+                </div>
+
+                <h2 class="cta-title">
+                    Transforme a LGPD em um 
+                    <span class="gradient-text-light">diferencial competitivo</span>
+                </h2>
+
+                <p class="cta-description">
+                    Comece com o DATTIX e mostre que sua startup cresce com responsabilidade desde o início.
+                </p>
+
+                <div class="cta-actions">
+                    <button id="openModalCTA" class="btn-cta">
+                        Quero adequar minha startup
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+
+                    <div class="cta-note">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Sem compromisso • Comece grátis</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="logo-dattix-new.png" alt="DATTIX Logo" class="footer-logo">
+                    <p class="footer-description">
+                        Solução inteligente para conformidade<br>
+                        LGPD em startups e pequenos negócios.
+                    </p>
+                    <div class="footer-icons">
+                        <div class="footer-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="footer-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <div class="footer-icon">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-team">
+                    <h3 class="footer-title">Fundadores & Co-Fundadores</h3>
+                    <div class="team-grid">
+                        <div class="team-section">
+                            <h4 class="team-subtitle">Fundadores</h4>
+                            <div class="team-members">
+                                <div class="team-member">
+                                    <div class="team-dot team-dot-blue"></div>
+                                    <span>Katia Daud</span>
+                                </div>
+                                <div class="team-member">
+                                    <div class="team-dot team-dot-blue"></div>
+                                    <span>João Oliveira</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="team-section">
+                            <h4 class="team-subtitle">Co-Fundadores</h4>
+                            <div class="team-members">
+                                <div class="team-member">
+                                    <div class="team-dot team-dot-purple"></div>
+                                    <span>Bruno Lombardi</span>
+                                </div>
+                                <div class="team-member">
+                                    <div class="team-dot team-dot-purple"></div>
+                                    <span>Taciane Garcia</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h3 class="footer-title">Links Importantes</h3>
+                    <div class="footer-nav">
+                        <a href="codigo-etica.html" class="footer-link">→ Código de Ética</a>
+                        <a href="termos-uso.html" class="footer-link">→ Termos de Uso</a>
+                        <a href="politica-privacidade.html" class="footer-link">→ Política de Privacidade</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-copyright">© 2025 DATTIX. Todos os direitos reservados.</p>
+                <div class="footer-made">
+                    <span>Feito com ❤️ para startups brasileiras</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cookie Consent Modal -->
+    <div id="cookieModal" class="cookie-modal">
+        <div class="cookie-content">
+            <div class="cookie-header">
+                <div class="cookie-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <div class="cookie-text">
+                    <h3 class="cookie-title">Ajustar Preferências de Cookies</h3>
+                    <p class="cookie-description">
+                        Utilizamos cookies para melhorar sua experiência. Você pode gerenciar suas preferências abaixo.
+                    </p>
+                </div>
+            </div>
+
+            <div class="cookie-links">
+                <a href="politica-privacidade.html" class="cookie-link">→ Política de Privacidade</a>
+                <a href="termos-uso.html" class="cookie-link">→ Termos de Uso</a>
+            </div>
+
+            <div class="cookie-actions">
+                <div class="cookie-buttons-row">
+                    <button id="cookieOptions" class="btn-cookie-outline">Opções</button>
+                    <button id="cookieReject" class="btn-cookie-outline">Rejeitar</button>
+                </div>
+                <button id="cookieAccept" class="btn-cookie-primary">Aceitar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cookie Options Modal -->
+    <div id="cookieOptionsModal" class="cookie-options-modal">
+        <div class="cookie-options-content">
+            <div class="cookie-options-header">
+                <h2 class="cookie-options-title">Preferências de Cookies</h2>
+                <button id="closeCookieOptions" class="cookie-options-close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+
+            <p class="cookie-options-description">
+                Existem diversos tipos de cookies na internet, com diferentes propósitos. Você tem o direito de escolher
+                quais deles deseja permitir.
+            </p>
+
+            <div class="cookie-categories">
+                <div class="cookie-category cookie-necessary">
+                    <div class="cookie-category-content">
+                        <h3 class="cookie-category-title">Necessários</h3>
+                        <p class="cookie-category-description">
+                            São cookies necessários para o funcionamento do site. Sem eles o site não funciona e portanto
+                            devem estar sempre habilitados.
+                        </p>
+                    </div>
+                    <div class="cookie-toggle cookie-toggle-on">
+                        <div class="cookie-toggle-slider"></div>
+                    </div>
+                </div>
+
+                <div class="cookie-category">
+                    <div class="cookie-category-content">
+                        <h3 class="cookie-category-title">Funcionalidade</h3>
+                        <p class="cookie-category-description">
+                            São cookies que adicionam funcionalidades desejáveis ao site, como relembrar preferências, idioma.
+                            Permitem personalização de sua experiência.
+                        </p>
+                    </div>
+                    <div class="cookie-toggle" data-type="functionality">
+                        <div class="cookie-toggle-slider"></div>
+                    </div>
+                </div>
+
+                <div class="cookie-category">
+                    <div class="cookie-category-content">
+                        <h3 class="cookie-category-title">Estatísticas</h3>
+                        <p class="cookie-category-description">
+                            São cookies utilizados para adquirir dados de como os usuários utilizam a página (quais páginas
+                            são mais visitadas, se ocorreram mensagens de erro, etc.).
+                        </p>
+                    </div>
+                    <div class="cookie-toggle" data-type="statistics">
+                        <div class="cookie-toggle-slider"></div>
+                    </div>
+                </div>
+
+                <div class="cookie-category">
+                    <div class="cookie-category-content">
+                        <h3 class="cookie-category-title">Marketing</h3>
+                        <p class="cookie-category-description">
+                            São cookies utilizados para te apresentar propagandas personalizadas.
+                        </p>
+                    </div>
+                    <div class="cookie-toggle" data-type="marketing">
+                        <div class="cookie-toggle-slider"></div>
+                    </div>
+                </div>
+
+                <div class="cookie-category">
+                    <div class="cookie-category-content">
+                        <h3 class="cookie-category-title">Não classificados</h3>
+                        <p class="cookie-category-description">
+                            São cookies que ainda não classificamos em nenhuma das outras categorias.
+                        </p>
+                    </div>
+                    <div class="cookie-toggle" data-type="unclassified">
+                        <div class="cookie-toggle-slider"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cookie-options-actions">
+                <button id="acceptSelected" class="btn-cookie-accept">Aceitar Todos Selecionados</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
