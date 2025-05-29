@@ -977,6 +977,8 @@ body {
   height: 2rem;
   width: auto;
   filter: brightness(0) invert(1);
+  object-fit: contain;
+  max-width: 120px;
 }
 
 .footer-description {
