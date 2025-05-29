@@ -977,6 +977,7 @@ body {
   height: 2rem;
   width: auto;
   filter: brightness(0) invert(1);
+  object-fit: contain;
 }
 
 .footer-description {
@@ -1499,4 +1500,13 @@ body {
     margin: 0.5rem;
     width: calc(100% - 1rem);
   }
+}
+
+/* Correção específica para logos em páginas legais */
+.legal-page .footer-logo-small {
+  height: 2rem;
+  width: auto;
+  filter: brightness(0) invert(1);
+  object-fit: contain;
+  max-width: 120px;
 }
