@@ -975,10 +975,9 @@ body {
 
 .footer-logo-small {
   height: 2rem;
-  width: auto;
-  filter: brightness(0) invert(1);
+  width: 128px;
   object-fit: contain;
-  max-width: 120px;
+  filter: brightness(0) invert(1);
 }
 
 .footer-description {
