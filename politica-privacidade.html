@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidade - DATTIX</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .legal-page {
+            min-height: 100vh;
+            background: white;
+        }
+        
+        .legal-header {
+            background: linear-gradient(135deg, #0f172a, #1e3a8a, #0f172a);
+            padding: 2rem 0;
+        }
+        
+        .back-button {
+            background: transparent;
+            border: 1px solid #93c5fd;
+            color: #bfdbfe;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(4px);
+        }
+        
+        .back-button:hover {
+            background: #2563eb;
+            color: white;
+        }
+        
+        .legal-hero {
+            padding: 4rem 0;
+            background: linear-gradient(180deg, #f8fafc, white);
+            text-align: center;
+        }
+        
+        .legal-content {
+            padding: 4rem 0;
+        }
+        
+        .sections-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .section-card {
+            background: white;
+            border-radius: 1rem;
+            padding: 2rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .section-card:hover {
+            transform: translateY(-0.25rem);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        }
+        
+        .section-header {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .section-number {
+            width: 4rem;
+            height: 4rem;
+            border-radius: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 900;
+            color: white;
+            flex-shrink: 0;
+        }
+        
+        .section-icon {
+            width: 3.5rem;
+            height: 3.5rem;
+            border-radius: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            flex-shrink: 0;
+        }
+        
+        .section-icon i {
+            font-size: 1.75rem;
+        }
+        
+        .section-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #1e293b;
+            margin-bottom: 1rem;
+            transition: color 0.3s ease;
+        }
+        
+        .section-card:hover .section-title {
+            color: #1d4ed8;
+        }
+        
+        .section-description {
+            color: #64748b;
+            line-height: 1.6;
+            text-align: justify;
+        }
+        
+        .contact-section {
+            padding: 4rem 0;
+            background: linear-gradient(135deg, #0f172a, #1e3a8a, #0f172a);
+            color: white;
+            text-align: center;
+        }
+        
+        .contact-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(4px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 1rem;
+            padding: 2rem;
+            max-width: 32rem;
+            margin: 0 auto;
+        }
+        
+        .contact-header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+        
+        .contact-icon {
+            background: linear-gradient(135deg, #60a5fa, #06b6d4);
+            border-radius: 50%;
+            padding: 0.75rem;
+        }
+        
+        .contact-icon i {
+            font-size: 2rem;
+            color: white;
+        }
+        
+        .contact-info h3 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: white;
+        }
+        
+        .contact-info p {
+            color: #93c5fd;
+        }
+        
+        .contact-email {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(4px);
+            border-radius: 0.75rem;
+            padding: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .contact-email p {
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: #bfdbfe;
+        }
+
+        .footer-logo-small {
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="legal-page">
+        <!-- Header -->
+        <header class="legal-header">
+            <div class="container">
+                <div style="display: flex; justify-content: flex-end;">
+                    <a href="index.html" class="back-button">
+                        <i class="fas fa-arrow-left"></i>
+                        Voltar ao Site
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="legal-hero">
+            <div class="container" style="max-width: 1000px;">
+                <div class="section-badge">
+                    <i class="fas fa-file-alt"></i>
+                    <span>Documento Legal</span>
+                </div>
+
+                <h1 style="font-size: 3rem; font-weight: 900; color: #0f172a; margin-bottom: 1.5rem; line-height: 1.1;">
+                    Política de 
+                    <span class="gradient-text">Privacidade</span>
+                </h1>
+
+                <div style="background: linear-gradient(135deg, #dbeafe, #bfdbfe); border: 2px solid #93c5fd; border-radius: 1rem; padding: 2rem; margin-bottom: 2rem;">
+                    <p style="font-size: 1.125rem; color: #374151; line-height: 1.6;">
+                        Esta Política de Privacidade descreve como a DATTIX, startup de tecnologia com foco em soluções para
+                        conformidade à LGPD, coleta, utiliza, armazena e compartilha informações pessoais de usuários de sua
+                        plataforma e visitantes do site.
+                    </p>
+                </div>
+
+                <div style="display: flex; align-items: center; justify-content: center; gap: 0.5rem; color: #64748b;">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span style="font-weight: 500;">Atualizada em 26 de maio de 2025</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seções da Política -->
+        <section class="legal-content">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Como Tratamos Seus Dados</h2>
+                    <p class="section-description">
+                        Transparência total sobre como coletamos, utilizamos e protegemos suas informações pessoais.
+                    </p>
+                </div>
+
+                <div class="sections-grid">
+                    <div class="section-card">
+                        <div class="section-header">
+                            <div class="section-number step-blue">1</div>
+                            <div class="section-icon step-blue">
+                                <i class="fas fa-database"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="section-title">Coleta de Informações</h3>
+                            <p class="section-description">
+                                Coletamos informações pessoais fornecidas voluntariamente pelo usuário ao preencher formulários, entrar em contato conosco ou utilizar os serviços da plataforma DATTIX. As informações coletadas podem incluir nome, e-mail, telefone, nome da empresa, cargo, CNPJ, e demais dados necessários para prestação de serviços de conformidade digital.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="section-card">
+                        <div class="section-header">
+                            <div class="section-number step-green">2</div>
+                            <div class="section-icon step-green">
+                                <i class="fas fa-cogs"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="section-title">Uso das Informações</h3>
+                            <p class="section-description">
+                                As informações coletadas são utilizadas para: Prestar os serviços contratados; Realizar diagnósticos de conformidade com a LGPD; Enviar comunicações sobre atualizações, conteúdos, eventos ou promoções relacionadas à DATTIX; Atender solicitações e exercer direitos previstos pela legislação de proteção de dados.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="section-card">
+                        <div class="section-header">
+                            <div class="section-number step-purple">3</div>
+                            <div class="section-icon step-purple">
+                                <i class="fas fa-users"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="section-title">Compartilhamento de Dados</h3>
+                            <p class="section-description">
+                                A DATTIX não compartilha dados pessoais com terceiros, exceto quando necessário para execução dos serviços contratados, cumprimento de obrigações legais ou mediante consentimento do titular.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="section-card">
+                        <div class="section-header">
+                            <div class="section-number" style="background: linear-gradient(135deg, #ef4444, #dc2626);">4</div>
+                            <div class="section-icon" style="background: linear-gradient(135deg, #ef4444, #dc2626);">
+                                <i class="fas fa-lock"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="section-title">Armazenamento e Segurança</h3>
+                            <p class="section-description">
+                                As informações são armazenadas em ambientes seguros, com acesso restrito e controle de confidencialidade. Adotamos medidas técnicas e administrativas adequadas para proteger os dados pessoais contra acessos não autorizados, vazamentos, alterações ou destruição.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="section-card">
+                        <div class="section-header">
+                            <div class="section-number step-orange">5</div>
+                            <div class="section-icon step-orange">
+                                <i class="fas fa-user-check"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="section-title">Direitos do Titular</h3>
+                            <p class="section-description">
+                                Em conformidade com a Lei Geral de Proteção de Dados (LGPD), o titular tem o direito de: Confirmar a existência de tratamento; Acessar os dados; Corrigir dados incompletos, inexatos ou desatualizados; Solicitar anonimização, bloqueio ou eliminação; Revogar consentimento a qualquer momento.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="section-card">
+                        <div class="section-header">
+                            <div class="section-number benefit-cyan">6</div>
+                            <div class="section-icon benefit-cyan">
+                                <i class="fas fa-eye"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="section-title">Cookies e Tecnologias de Rastreamento</h3>
+                            <p class="section-description">
+                                Nosso site pode utilizar cookies e tecnologias semelhantes para melhorar a experiência do usuário, lembrar preferências e coletar informações estatísticas. Você pode ajustar as configurações do seu navegador para recusar cookies, caso deseje.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="section-card">
+                        <div class="section-header">
+                            <div class="section-number" style="background: linear-gradient(135deg, #ec4899, #be185d);">7</div>
+                            <div class="section-icon" style="background: linear-gradient(135deg, #ec4899, #be185d);">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="section-title">Contato</h3>
+                            <p class="section-description">
+                                Para exercer seus direitos ou esclarecer dúvidas relacionadas a esta Política de Privacidade, entre em contato com nosso Encarregado de Dados (DPO) pelo e-mail: dattix@dattix.com.br
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="section-card">
+                        <div class="section-header">
+                            <div class="section-number" style="background: linear-gradient(135deg, #6366f1, #4f46e5);">8</div>
+                            <div class="section-icon" style="background: linear-gradient(135deg, #6366f1, #4f46e5);">
+                                <i class="fas fa-exclamation-circle"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="section-title">Atualizações desta Política</h3>
+                            <p class="section-description">
+                                A DATTIX poderá atualizar esta Política de Privacidade periodicamente. Recomendamos a revisão regular deste documento. A versão mais recente estará sempre disponível em nosso site.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contato DPO -->
+        <section class="contact-section">
+            <div class="container" style="max-width: 1000px;">
+                <div class="section-badge badge-white">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Seus Direitos</span>
+                </div>
+
+                <h2 style="font-size: 2.5rem; font-weight: 900; line-height: 1.1; margin-bottom: 1.5rem;">
+                    Exercite seus direitos com 
+                    <span class="gradient-text-light">transparência</span>
+                </h2>
+
+                <p style="font-size: 1.25rem; color: #bfdbfe; line-height: 1.6; max-width: 768px; margin: 0 auto 2rem;">
+                    Entre em contato com nosso Encarregado de Dados (DPO) para exercer qualquer direito previsto na LGPD ou
+                    esclarecer dúvidas sobre o tratamento de seus dados pessoais.
+                </p>
+
+                <div class="contact-card">
+                    <div class="contact-header">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-info">
+                            <h3>Contato DPO</h3>
+                            <p>Encarregado de Proteção de Dados</p>
+                        </div>
+                    </div>
+                    <div class="contact-email">
+                        <p>dattix@dattix.com.br</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-brand">
+                        <img src="public/logo-dattix-new.png" alt="DATTIX Logo" class="footer-logo-small">
+                        <p class="footer-description">
+                            Solução inteligente para conformidade<br>
+                            LGPD em startups e pequenos negócios.
+                        </p>
+                    </div>
+
+                    <div class="footer-links">
+                        <h3 class="footer-title">Documentos Legais</h3>
+                        <div class="footer-nav">
+                            <a href="codigo-etica.html" class="footer-link">→ Código de Ética</a>
+                            <a href="politica-privacidade.html" class="footer-link">→ Política de Privacidade</a>
+                            <a href="termos-uso.html" class="footer-link">→ Termos de Uso</a>
+                        </div>
+                    </div>
+
+                    <div class="footer-team">
+                        <h3 class="footer-title">Fundadores & Co-Fundadores</h3>
+                        <div class="team-grid">
+                            <div class="team-section">
+                                <h4 class="team-subtitle">Fundadores</h4>
+                                <div class="team-members">
+                                    <div class="team-member">
+                                        <div class="team-dot team-dot-blue"></div>
+                                        <span>Katia Daud</span>
+                                    </div>
+                                    <div class="team-member">
+                                        <div class="team-dot team-dot-blue"></div>
+                                        <span>João Oliveira</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="team-section">
+                                <h4 class="team-subtitle">Co-Fundadores</h4>
+                                <div class="team-members">
+                                    <div class="team-member">
+                                        <div class="team-dot team-dot-purple"></div>
+                                        <span>Bruno Lombardi</span>
+                                    </div>
+                                    <div class="team-member">
+                                        <div class="team-dot team-dot-purple"></div>
+                                        <span>Taciane Garcia</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <p class="footer-copyright">© 2025 DATTIX. Todos os direitos reservados.</p>
+                    <div class="footer-made">
+                        <i class="fas fa-calendar-alt" style="margin-right: 0.5rem;"></i>
+                        <span>Atualizada em 26 de maio de 2025</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

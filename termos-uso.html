@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Termos de Uso - DATTIX</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .legal-page {
+            min-height: 100vh;
+            background: white;
+        }
+        
+        .legal-header {
+            background: linear-gradient(135deg, #0f172a, #1e3a8a, #0f172a);
+            padding: 2rem 0;
+        }
+        
+        .back-button {
+            background: transparent;
+            border: 1px solid #93c5fd;
+            color: #bfdbfe;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(4px);
+        }
+        
+        .back-button:hover {
+            background: #2563eb;
+            color: white;
+        }
+        
+        .legal-hero {
+            padding: 4rem 0;
+            background: linear-gradient(180deg, #f8fafc, white);
+            text-align: center;
+        }
+        
+        .legal-content {
+            padding: 4rem 0;
+        }
+        
+        .terms-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .term-card {
+            background: white;
+            border-radius: 1rem;
+            padding: 2rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .term-card:hover {
+            transform: translateY(-0.25rem);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        }
+        
+        .term-header {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .term-number {
+            width: 4rem;
+            height: 4rem;
+            border-radius: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 900;
+            color: white;
+            flex-shrink: 0;
+        }
+        
+        .term-icon {
+            width: 3.5rem;
+            height: 3.5rem;
+            border-radius: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            flex-shrink: 0;
+        }
+        
+        .term-icon i {
+            font-size: 1.75rem;
+        }
+        
+        .term-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #1e293b;
+            margin-bottom: 1rem;
+            transition: color 0.3s ease;
+        }
+        
+        .term-card:hover .term-title {
+            color: #1d4ed8;
+        }
+        
+        .term-description {
+            color: #64748b;
+            line-height: 1.6;
+            text-align: justify;
+        }
+        
+        .support-section {
+            padding: 4rem 0;
+            background: linear-gradient(135deg, #0f172a, #1e3a8a, #0f172a);
+            color: white;
+            text-align: center;
+        }
+        
+        .support-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 3rem;
+        }
+        
+        .support-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(4px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 1rem;
+            padding: 2rem;
+        }
+        
+        .support-header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+        
+        .support-icon {
+            border-radius: 50%;
+            padding: 0.75rem;
+        }
+        
+        .support-icon i {
+            font-size: 2rem;
+            color: white;
+        }
+        
+        .support-info h3 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: white;
+        }
+        
+        .support-info p {
+            color: #93c5fd;
+        }
+        
+        .support-details {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(4px);
+            border-radius: 0.75rem;
+            padding: 1rem;
+        }
+        
+        .support-details p {
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: #bfdbfe;
+        }
+
+        .footer-logo-small {
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="legal-page">
+        <!-- Header -->
+        <header class="legal-header">
+            <div class="container">
+                <div style="display: flex; justify-content: flex-end;">
+                    <a href="index.html" class="back-button">
+                        <i class="fas fa-arrow-left"></i>
+                        Voltar ao Site
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="legal-hero">
+            <div class="container" style="max-width: 1000px;">
+                <div class="section-badge">
+                    <i class="fas fa-file-alt"></i>
+                    <span>Documento Legal</span>
+                </div>
+
+                <h1 style="font-size: 3rem; font-weight: 900; color: #0f172a; margin-bottom: 1.5rem; line-height: 1.1;">
+                    Termos de 
+                    <span class="gradient-text">Uso</span>
+                </h1>
+
+                <div style="background: linear-gradient(135deg, #dbeafe, #bfdbfe); border: 2px solid #93c5fd; border-radius: 1rem; padding: 2rem; margin-bottom: 2rem;">
+                    <p style="font-size: 1.125rem; color: #374151; line-height: 1.6;">
+                        Este Termo de Uso regula as condições de acesso e utilização da plataforma DATTIX, pertencente à empresa
+                        DATTIX, dedicada ao desenvolvimento de soluções tecnológicas voltadas à adequação à Lei Geral de Proteção
+                        de Dados (LGPD), disponibilizadas por meio de software como serviço (SaaS).
+                    </p>
+                </div>
+
+                <div style="display: flex; align-items: center; justify-content: center; gap: 0.5rem; color: #64748b;">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span style="font-weight: 500;">Última atualização: 26 de maio de 2025</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seções dos Termos -->
+        <section class="legal-content">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Condições de Uso da Plataforma</h2>
+                    <p class="section-description">
+                        Regras claras e transparentes para o uso responsável da plataforma DATTIX.
+                    </p>
+                </div>
+
+                <div class="terms-grid">
+                    <div class="term-card">
+                        <div class="term-header">
+                            <div class="term-number step-blue">1</div>
+                            <div class="term-icon step-blue">
+                                <i class="fas fa-user-check"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="term-title">Aceitação dos Termos</h3>
+                            <p class="term-description">
+                                Ao utilizar a plataforma DATTIX, o usuário declara ter lido, compreendido e aceitado integralmente os termos e condições aqui descritos.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="term-card">
+                        <div class="term-header">
+                            <div class="term-number step-green">2</div>
+                            <div class="term-icon step-green">
+                                <i class="fas fa-cogs"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="term-title">Serviços Oferecidos</h3>
+                            <p class="term-description">
+                                A DATTIX oferece ferramentas para diagnóstico de conformidade com a LGPD, emissão de relatórios, sugestões automatizadas de adequação, acesso a assistente virtual (katIA®), e recursos de automação e organização de dados para pequenas empresas e startups.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="term-card">
+                        <div class="term-header">
+                            <div class="term-number step-purple">3</div>
+                            <div class="term-icon step-purple">
+                                <i class="fas fa-user"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="term-title">Cadastro do Usuário</h3>
+                            <p class="term-description">
+                                O usuário é responsável por fornecer informações verídicas e manter seus dados atualizados. O acesso à conta é pessoal e intransferível. A DATTIX não se responsabiliza por acessos indevidos decorrentes de negligência do usuário.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="term-card">
+                        <div class="term-header">
+                            <div class="term-number" style="background: linear-gradient(135deg, #ef4444, #dc2626);">4</div>
+                            <div class="term-icon" style="background: linear-gradient(135deg, #ef4444, #dc2626);">
+                                <i class="fas fa-desktop"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="term-title">Uso da Plataforma</h3>
+                            <p class="term-description">
+                                O usuário compromete-se a utilizar a plataforma exclusivamente para fins legais e compatíveis com as funcionalidades contratadas. É proibida a reprodução, modificação, engenharia reversa ou uso da marca DATTIX sem autorização expressa.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="term-card">
+                        <div class="term-header">
+                            <div class="term-number step-orange">5</div>
+                            <div class="term-icon step-orange">
+                                <i class="fas fa-lock"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="term-title">Privacidade e Proteção de Dados</h3>
+                            <p class="term-description">
+                                A DATTIX adota práticas em conformidade com a LGPD. As informações coletadas são tratadas conforme descrito na Política de Privacidade disponível no site.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="term-card">
+                        <div class="term-header">
+                            <div class="term-number benefit-cyan">6</div>
+                            <div class="term-icon benefit-cyan">
+                                <i class="fas fa-key"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="term-title">Licença de Uso</h3>
+                            <p class="term-description">
+                                O usuário recebe uma licença limitada, não exclusiva e intransferível para utilizar a plataforma conforme os planos contratados. O não cumprimento deste termo poderá acarretar a suspensão ou cancelamento do acesso.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="term-card">
+                        <div class="term-header">
+                            <div class="term-number" style="background: linear-gradient(135deg, #ec4899, #be185d);">7</div>
+                            <div class="term-icon" style="background: linear-gradient(135deg, #ec4899, #be185d);">
+                                <i class="fas fa-sync-alt"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="term-title">Atualizações e Disponibilidade</h3>
+                            <p class="term-description">
+                                A DATTIX reserva-se o direito de realizar atualizações, melhorias ou interrupções temporárias dos serviços, sempre que necessário para garantir sua evolução e segurança.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="term-card">
+                        <div class="term-header">
+                            <div class="term-number" style="background: linear-gradient(135deg, #6366f1, #4f46e5);">8</div>
+                            <div class="term-icon" style="background: linear-gradient(135deg, #6366f1, #4f46e5);">
+                                <i class="fas fa-exclamation-triangle"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="term-title">Limitação de Responsabilidade</h3>
+                            <p class="term-description">
+                                A DATTIX não se responsabiliza por eventuais danos decorrentes do uso indevido da plataforma ou interpretações equivocadas dos relatórios gerados. A plataforma não substitui orientação jurídica formal, exceto quando assim indicado expressamente.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="term-card">
+                        <div class="term-header">
+                            <div class="term-number" style="background: linear-gradient(135deg, #14b8a6, #0d9488);">9</div>
+                            <div class="term-icon" style="background: linear-gradient(135deg, #14b8a6, #0d9488);">
+                                <i class="fas fa-gavel"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="term-title">Disposições Gerais</h3>
+                            <p class="term-description">
+                                Este Termo poderá ser alterado a qualquer momento, mediante aviso no site. O foro para dirimir eventuais conflitos será o da Comarca de São José dos Campos/SP, com renúncia a qualquer outro.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contato e Foro -->
+        <section class="support-section">
+            <div class="container" style="max-width: 1000px;">
+                <div class="section-badge badge-white">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Suporte Legal</span>
+                </div>
+
+                <h2 style="font-size: 2.5rem; font-weight: 900; line-height: 1.1; margin-bottom: 1.5rem;">
+                    Dúvidas sobre os 
+                    <span class="gradient-text-light">Termos de Uso?</span>
+                </h2>
+
+                <p style="font-size: 1.25rem; color: #bfdbfe; line-height: 1.6; max-width: 768px; margin: 0 auto 2rem;">
+                    Entre em contato conosco para esclarecer qualquer dúvida sobre os termos e condições de uso da plataforma
+                    DATTIX.
+                </p>
+
+                <div class="support-grid">
+                    <div class="support-card">
+                        <div class="support-header">
+                            <div class="support-icon" style="background: linear-gradient(135deg, #60a5fa, #06b6d4);">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="support-info">
+                                <h3>Contato</h3>
+                                <p>Suporte e Dúvidas</p>
+                            </div>
+                        </div>
+                        <div class="support-details">
+                            <p>dattix@dattix.com.br</p>
+                        </div>
+                    </div>
+
+                    <div class="support-card">
+                        <div class="support-header">
+                            <div class="support-icon" style="background: linear-gradient(135deg, #a78bfa, #f472b6);">
+                                <i class="fas fa-gavel"></i>
+                            </div>
+                            <div class="support-info">
+                                <h3>Foro</h3>
+                                <p>Jurisdição Legal</p>
+                            </div>
+                        </div>
+                        <div class="support-details">
+                            <p>São José dos Campos/SP</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-brand">
+                        <img src="public/logo-dattix-new.png" alt="DATTIX Logo" class="footer-logo-small">
+                        <p class="footer-description">
+                            Solução inteligente para conformidade<br>
+                            LGPD em startups e pequenos negócios.
+                        </p>
+                    </div>
+
+                    <div class="footer-links">
+                        <h3 class="footer-title">Documentos Legais</h3>
+                        <div class="footer-nav">
+                            <a href="codigo-etica.html" class="footer-link">→ Código de Ética</a>
+                            <a href="politica-privacidade.html" class="footer-link">→ Política de Privacidade</a>
+                            <a href="termos-uso.html" class="footer-link">→ Termos de Uso</a>
+                        </div>
+                    </div>
+
+                    <div class="footer-team">
+                        <h3 class="footer-title">Fundadores & Co-Fundadores</h3>
+                        <div class="team-grid">
+                            <div class="team-section">
+                                <h4 class="team-subtitle">Fundadores</h4>
+                                <div class="team-members">
+                                    <div class="team-member">
+                                        <div class="team-dot team-dot-blue"></div>
+                                        <span>Katia Daud</span>
+                                    </div>
+                                    <div class="team-member">
+                                        <div class="team-dot team-dot-blue"></div>
+                                        <span>João Oliveira</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="team-section">
+                                <h4 class="team-subtitle">Co-Fundadores</h4>
+                                <div class="team-members">
+                                    <div class="team-member">
+                                        <div class="team-dot team-dot-purple"></div>
+                                        <span>Bruno Lombardi</span>
+                                    </div>
+                                    <div class="team-member">
+                                        <div class="team-dot team-dot-purple"></div>
+                                        <span>Taciane Garcia</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <p class="footer-copyright">© 2025 DATTIX. Todos os direitos reservados.</p>
+                    <div class="footer-made">
+                        <i class="fas fa-calendar-alt" style="margin-right: 0.5rem;"></i>
+                        <span>Atualizado em 26 de maio de 2025</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
