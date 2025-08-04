@@ -102,7 +102,10 @@ export default function TermosUso() {
         <div className="container mx-auto max-w-7xl">
           <div className="flex items-center justify-end">
             <Link href="/">
-              <Button variant="outline" className="border-blue-300 text-blue-100 hover:bg-blue-600 backdrop-blur-sm">
+              <Button
+                variant="outline"
+                className="border-blue-300 text-blue-100 hover:bg-blue-600 backdrop-blur-sm bg-transparent"
+              >
                 <ArrowLeft className="mr-2 h-4 w-4" />
                 Voltar ao Site
               </Button>
@@ -304,12 +307,6 @@ export default function TermosUso() {
                       <div className="bg-purple-600 rounded-full w-2 h-2"></div>
                       <span className="text-slate-300 hover:text-white transition-colors cursor-pointer">
                         Bruno Lombardi
-                      </span>
-                    </div>
-                    <div className="flex items-center space-x-3">
-                      <div className="bg-purple-600 rounded-full w-2 h-2"></div>
-                      <span className="text-slate-300 hover:text-white transition-colors cursor-pointer">
-                        Taciane Garcia
                       </span>
                     </div>
                   </div>

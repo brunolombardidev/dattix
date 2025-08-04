@@ -157,7 +157,7 @@ export default function DattixLanding() {
                   variant="outline"
                   size="lg"
                   onClick={openModal}
-                  className="border-2 border-blue-400/50 text-blue-400 hover:bg-blue-400 hover:text-white backdrop-blur-sm px-10 py-6 text-lg font-semibold rounded-xl transition-all duration-300 hover:scale-105"
+                  className="border-2 border-blue-400/50 text-blue-400 hover:bg-blue-400 hover:text-white backdrop-blur-sm px-10 py-6 text-lg font-semibold rounded-xl transition-all duration-300 hover:scale-105 bg-transparent"
                 >
                   Fale com a KatIA
                 </Button>
@@ -631,12 +631,6 @@ export default function DattixLanding() {
                         Bruno Lombardi
                       </span>
                     </div>
-                    <div className="flex items-center space-x-3">
-                      <div className="bg-purple-600 rounded-full w-2 h-2"></div>
-                      <span className="text-slate-300 hover:text-white transition-colors cursor-pointer">
-                        Taciane Garcia
-                      </span>
-                    </div>
                   </div>
                 </div>
               </div>
@@ -724,7 +718,12 @@ export default function DattixLanding() {
                 >
                   Opções
                 </Button>
-                <Button variant="outline" size="sm" onClick={handleRejectCookies} className="flex-1 text-xs">
+                <Button
+                  variant="outline"
+                  size="sm"
+                  onClick={handleRejectCookies}
+                  className="flex-1 text-xs bg-transparent"
+                >
                   Rejeitar
                 </Button>
               </div>
