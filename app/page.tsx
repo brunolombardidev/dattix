@@ -628,7 +628,13 @@ export default function DattixLanding() {
                     <div className="flex items-center space-x-3">
                       <div className="bg-purple-600 rounded-full w-2 h-2"></div>
                       <span className="text-slate-300 hover:text-white transition-colors cursor-pointer">
-                        Bruno Lombardi
+                        <a
+                          href="https://www.linkedin.com/in/brunolombardidev"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          Bruno Lombardi
+                        </a>
                       </span>
                     </div>
                   </div>
